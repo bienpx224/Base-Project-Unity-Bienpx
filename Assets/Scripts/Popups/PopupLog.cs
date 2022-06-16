@@ -9,7 +9,7 @@ public class PopupLog : Popups
 {
     public static PopupLog _Instance;
     [SerializeField] private TextMeshProUGUI _LogTxtObject;
-    public static String _LogText = "Start Logging... \n";
+    public static String _LogText = "Start Logging. \n";
     public static void Show()//
     {
         CheckInstance(() =>
