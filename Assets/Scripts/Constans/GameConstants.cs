@@ -17,13 +17,13 @@ public static class GameConstants
     public const string EXPIRE_TOKEN_REF = "expire_token";
     public const string REFRESH_TOKEN_REF = "refresh_token";
     public const string USER_NAME = "user_name";
-    public const string URL_CREATE_ACCOUNT_IN_WEB = "https://islands.bunicorn.game/";
-    public const string URL_FORGOT_ACCOUNT_IN_WEB = "https://islands.bunicorn.game/";
-    public const string URL_GAME_IN_WEB = "https://islands.bunicorn.game/";
-    public const string HOST = "https://buni-dev-api.sotatek";  // Official
-    public const string API_LOGIN_USERPASS = "https://buni-dev-api.sotatek.works";
-    public const string API_REFRESH_ACCESSTOKEN = "https://buni-dev-api.sotatek.works";
-    public const string API_LOGIN_WALLET = "https://buni-dev-api.sotatek.works";  // Offcial 
+    public const string URL_CREATE_ACCOUNT_IN_WEB = "";
+    public const string URL_FORGOT_ACCOUNT_IN_WEB = "";
+    public const string URL_GAME_IN_WEB = "";
+    public const string HOST = "";  // Official
+    public const string API_LOGIN_USERPASS = "";
+    public const string API_REFRESH_ACCESSTOKEN = "";
+    public const string API_LOGIN_WALLET = "";  // Offcial 
     #endregion
     #region ENUM_SIGN_IN
     public const int READY_SIGN = 0;
@@ -54,32 +54,7 @@ public static class GameConstants
     public const int MAIN_UI_MODE_MAIN_BUTTON = 3;
 
     public const float ORIGINAL_OTHORSIZE = 1.4f;
-    public const string ENUM_FARM_TYPE = "farm";
-    public const string ENUM_BUNIHOUSE_TYPE = "bunihouse";
-    public const string ENUM_TRAININGCENTER_TYPE = "trainingcenter";
-    public const string ENUM_TEMPLE_TYPE = "temple";
-    public const string ENUM_BREEDING_HOUSE_TYPE = "breedinghouse";
-    public const string ENUM_HATCHERY_TYPE = "hatchery";
-    public const string ENUM_STORAGE_TYPE = "storage";
-    public const string ENUM_MENTORING_TYPE = "mentoring";
 
-    public const string BATTLE_SLOT_1 = "battle_slot_1";
-    public const string BATTLE_SLOT_2 = "battle_slot_2";
-    public const string BATTLE_SLOT_3 = "battle_slot_3";
-
-    public const string DEFEND_SLOT_1 = "defend_slot_1";
-    public const string DEFEND_SLOT_2 = "defend_slot_2";
-    public const string DEFEND_SLOT_3 = "defend_slot_3";
-
-
-    public const string STEAL_SLOT_1 = "steal_slot_1";
-    public const string STEAL_SLOT_2 = "steal_slot_2";
-    public const string STEAL_SLOT_3 = "steal_slot_3";
-
-    public const string ELEMENT_FIRE = "Sprite/BuniInfoElement/fire";
-    public const string ELEMENT_EARTH = "Sprite/BuniInfoElement/earth";
-    public const string ELEMENT_WATER = "Sprite/BuniInfoElement/water";
-    public const string ELEMENT_AIR = "Sprite/BuniInfoElement/air";
     public enum TypeElement
     {
         unknow,
