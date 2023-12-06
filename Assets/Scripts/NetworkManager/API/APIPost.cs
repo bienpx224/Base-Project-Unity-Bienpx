@@ -2,45 +2,7 @@ using Newtonsoft.Json;
 public class APIPost
 {
 	//API get login data from server. This use for version test and remove when game release
-	public static APIRequest APILogin(string body)
-	{
-		APIRequest request = new APIRequest();
-		request.url = GameConstants.API_LOGIN_WALLET;
-
-		var data = new
-		{
-			walletAddress = body
-		};
-		request.body = JsonConvert.SerializeObject(data);
-		return request;
-	}
-
-	public static APIRequest APILoginUserPass(string username, string password)
-	{
-		APIRequest request = new APIRequest();
-		request.url = GameConstants.API_LOGIN_USERPASS;
-
-		var data = new
-		{
-			username = username,
-			password = password
-		};
-		request.body = JsonConvert.SerializeObject(data);
-		return request;
-	}
-
-	public static APIRequest APIRefreshAccessToken(string refreshToken)
-	{
-		APIRequest request = new APIRequest();
-		request.url = GameConstants.API_REFRESH_ACCESSTOKEN;
-
-		var data = new
-		{
-			refreshToken = refreshToken
-		};
-		request.body = JsonConvert.SerializeObject(data);
-		return request;
-	}
+	
 
 	//API create building, Input row col is building coordinate, building code generate base on type of building. 
 	public static APIRequest APICreateBuilding(int row, int col, int islandId, string buildingCode)

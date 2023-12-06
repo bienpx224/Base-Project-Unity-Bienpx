@@ -3,7 +3,27 @@ using System;
 
 public static class TimeHelper
 {
+    public static string TimeFormat(float timeToDisplay)
+    {
+        float hour = Mathf.FloorToInt(timeToDisplay / 3600);
+        float minutes = Mathf.FloorToInt((timeToDisplay - hour * 3600) / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        return $"{hour:00}:{minutes:00}:{seconds:00}";
+    }
+    
+    public static long DateTimeToUnixSeconds(DateTime time)
+    {
+        return ((DateTimeOffset)time).ToUnixTimeSeconds();
+    }
+    public static long DateTimeToUnixMilliseconds(DateTime time)
+    {
+        return ((DateTimeOffset)time).ToUnixTimeMilliseconds();
+    }
 
+    public static int Percentage(int value, int percent)
+    {
+        return (int) (value * percent * 1.0 / 100);
+    }
     #region To days
     public static double ConvertMillisecondsToDays(double milliseconds)
     {

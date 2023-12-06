@@ -59,7 +59,7 @@ public partial class NetworkManager
     public IEnumerator CreateWebPostRequest(APIRequest requestAPi, System.Action<string> onComplete, System.Action<object> onFail)
     {
 
-        UnityWebRequest request = UnityWebRequest.Post(requestAPi.url, UnityWebRequest.kHttpVerbPOST);
+        UnityWebRequest request = UnityWebRequest.PostWwwForm(requestAPi.url, UnityWebRequest.kHttpVerbPOST);
         byte[] payload = System.Text.Encoding.UTF8.GetBytes(requestAPi.body);
         UploadHandler data = new UploadHandlerRaw(payload);
         request.uploadHandler = data;
