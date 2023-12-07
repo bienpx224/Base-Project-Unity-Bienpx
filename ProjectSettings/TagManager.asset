@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Canvas Popup 3
+  - Canvas Popup 4
   layers:
   - Default
   - TransparentFX
@@ -12,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Popup
-  - 
-  - 
+  - Fx
+  - Overlay
   - 
   - 
   - 
@@ -38,9 +40,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 848385335
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: UI
+    uniqueID: 3309971265
+    locked: 0
   - name: Popup
     uniqueID: 3064952655
+    locked: 0
+  - name: Fx
+    uniqueID: 118123367
+    locked: 0
+  - name: Overlay
+    uniqueID: 2656070513
     locked: 0
